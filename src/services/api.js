@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Tạo instance axios với base URL mặc định
 const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 // ✅ Lấy danh sách tin tức theo mã cổ phiếu hoặc ngành, có hỗ trợ phân trang
